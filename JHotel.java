@@ -1,15 +1,21 @@
 
 /**
- * Write a description of class JHotel here.
+ * Ini merupakan class JHotel, terdapat fungsi main pada class ini.
+ *	
  *
  * @author (Mochamad Fahmi Fajrin)
- * @version (Modul1, 22/02/2018)
+ * @version 01/03/2018
  */
 public class JHotel
 {
+
+   /**
+   * ini merupakan main method.
+   * @param args Unused.
+   * @return Nothing.
+   */
     public static void main(String[] args) 
     { 
-    
 	} 
 	public JHotel()
 	{

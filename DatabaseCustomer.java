@@ -3,7 +3,7 @@
  * Write a description of class DatabaseCustomer here.
  *
  * @author (Mochamad Fahmi Fajrin)
- * @version (Modul1, 22/02/2018)
+ * @version 01/03/2018
  */
 public class DatabaseCustomer
 {
