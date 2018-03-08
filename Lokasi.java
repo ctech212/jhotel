@@ -2,7 +2,7 @@
 /**
  * Ini merupakan class Lokasi dimana pada kelas ini akan terdapat informasi tentang lokasi hotel.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class Lokasi

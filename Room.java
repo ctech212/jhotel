@@ -1,6 +1,6 @@
 
 /**
- * Ini class Room
+ * Ini class Room, berisi tentang informasi booking kamar.
  *
  * @author Mochamad Fahmi Fajrin
  * @version 08-03-2018

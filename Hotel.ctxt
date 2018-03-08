@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Hotel
-comment0.text=\r\n\ Ini\ merupakan\ class\ Hotel,\ terdapat\ beberapa\ method\ terkait\ informasi\ hotel.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ Hotel.\ Terdapat\ beberapa\ method\ terkait\ informasi\ hotel.\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 01/03/2018\r\n
 comment1.params=nama\ lokasi\ bintang
 comment1.target=Hotel(java.lang.String,\ Lokasi,\ int)
 comment1.text=\r\n\ ini\ merupakan\ method\ Hotel,\ yang\ merupakan\ Contructor.\r\n\ @param\ nama.\r\n\ @param\ lokasi.\r\n\ @param\ bintang.\r\n

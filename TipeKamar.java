@@ -1,6 +1,6 @@
 
 /**
- * Ini merupakan class Enum untuk TipeKamar
+ * Ini merupakan class Enum untuk TipeKamar.
  *
  * @author Mochamad Fahmi Fajrin
  * @version 08-03-2018

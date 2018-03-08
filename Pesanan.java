@@ -2,7 +2,7 @@
 /**
  * Ini merupakan class Pesanan, terdapat beberapa method untuk kepetingan pesanan.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class Pesanan

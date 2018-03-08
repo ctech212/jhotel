@@ -2,7 +2,7 @@
 /**
  * Ini merupakan class Customer, berisi method untuk mendapatkan informasi customer.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class Customer

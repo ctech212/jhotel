@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=JHotel
-comment0.text=\r\n\ Ini\ merupakan\ class\ JHotel,\ terdapat\ fungsi\ main\ pada\ class\ ini.\r\n\ \ \r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ JHotel,\ terdapat\ fungsi\ main\ pada\ class\ ini.\r\n\ \ \r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 01/03/2018\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment1.text=\r\n\ ini\ merupakan\ main\ method.\r\n\ @param\ Nothing.\r\n\ @return\ Nothing.\r\n

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Room
-comment0.text=\r\n\ Ini\ class\ Room\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 08-03-2018\r\n
+comment0.text=\r\n\ Ini\ class\ Room,\ berisi\ tentang\ informasi\ booking\ kamar.\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 08-03-2018\r\n
 comment1.params=
 comment1.target=Hotel\ getHotel()
 comment10.params=id

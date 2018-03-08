@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DatabaseCustomer
-comment0.text=\r\n\ Ini\ merupakan\ class\ DatabaseCustomer,\ dimana\ pada\ class\ ini\ terdapat\ method\ untuk\ mendapatkan\ atau\ menghapus\ informasi\ atau\ database\ Customer.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ DatabaseCustomer,\ dimana\ pada\ class\ ini\ terdapat\ method\ untuk\ mendapatkan\ atau\ menghapus\ informasi\ atau\ database\ Customer.\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 01/03/2018\r\n
 comment1.params=baru
 comment1.target=boolean\ addCustomer(Customer)
 comment1.text=\r\n\ ini\ merupakan\ method\ addCustomer.\r\n\ @param\ baru.\r\n\ @return\ baru.\r\n

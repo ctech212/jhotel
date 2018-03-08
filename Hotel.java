@@ -1,8 +1,8 @@
 
 /**
- * Ini merupakan class Hotel, terdapat beberapa method terkait informasi hotel.
+ * Ini merupakan class Hotel. Terdapat beberapa method terkait informasi hotel.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class Hotel

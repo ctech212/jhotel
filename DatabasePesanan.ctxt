@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=DatabasePesanan
-comment0.text=\r\n\ Ini\ merupakan\ class\ DatabasePesanan,\ pada\ class\ ini\ akan\ terdapat\ method\ untuk\ menambahkan,\ menghapus\ pesanan,\ ataupun\ yang\ dibatalkan.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ DatabasePesanan,\ pada\ class\ ini\ akan\ terdapat\ method\ untuk\ menambahkan,\ menghapus\ pesanan,\ ataupun\ yang\ dibatalkan.\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 01/03/2018\r\n
 comment1.params=baru
 comment1.target=boolean\ addPesanan(Pesanan)
 comment1.text=\r\n\ ini\ merupakan\ method\ addPesanan.\r\n\ @param\ baru.\r\n\ @return\ baru.\r\n

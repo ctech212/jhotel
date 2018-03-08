@@ -2,7 +2,7 @@
 /**
  * Ini merupakan class DatabasePesanan, pada class ini akan terdapat method untuk menambahkan, menghapus pesanan, ataupun yang dibatalkan.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class DatabasePesanan

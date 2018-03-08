@@ -1,6 +1,6 @@
 
 /**
- * Ini merupakan class Admisnistrasi, yang akan mengurusi bagian pesanan
+ * Ini merupakan class Admisnistrasi, yang akan mengurusi bagian pesanan.
  *
  * @author Mochamad Fahmi Fajrin
  * @version 08-03-2018

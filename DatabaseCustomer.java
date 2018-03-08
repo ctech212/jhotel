@@ -2,7 +2,7 @@
 /**
  * Ini merupakan class DatabaseCustomer, dimana pada class ini terdapat method untuk mendapatkan atau menghapus informasi atau database Customer.
  *
- * @author (Mochamad Fahmi Fajrin)
+ * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
 public class DatabaseCustomer

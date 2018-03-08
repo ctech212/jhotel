@@ -1,6 +1,6 @@
 
 /**
- * Ini merupakan class Enum untuk StatusKamar
+ * Ini merupakan class Enum untuk StatusKamar.
  *
  * @author Mochamad Fahmi Fajrin
  * @version 08-03-2018

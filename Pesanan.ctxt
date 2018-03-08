@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Pesanan
-comment0.text=\r\n\ Ini\ merupakan\ class\ Pesanan,\ terdapat\ beberapa\ method\ untuk\ kepetingan\ pesanan.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ Pesanan,\ terdapat\ beberapa\ method\ untuk\ kepetingan\ pesanan.\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 01/03/2018\r\n
 comment1.params=biaya\ pelanggan
 comment1.target=Pesanan(double,\ Customer)
 comment1.text=\r\n\ ini\ merupakan\ method\ Pesanan,\ yang\ merupakan\ Contructor.\r\n\ @param\ biaya.\r\n\ @param\ pelanggan.\r\n
