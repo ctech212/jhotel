@@ -20,9 +20,9 @@ public class Hotel
     */
     public Hotel(String nama, Lokasi lokasi, int bintang)
     {
-     	this.nama=nama;
-     	this.lokasi=lokasi;
-     	this.bintang=bintang;
+     	this.nama=nama;//instance variable
+     	this.lokasi=lokasi;//instance variable
+     	this.bintang=bintang;//instance variable
     }
 
     /**
@@ -88,7 +88,7 @@ public class Hotel
     */
     public void printData()
     {
-    	System.out.printf("Nama Pelanggan: %s", nama);
+    	System.out.printf("Nama Hotel: %s\n", nama);
     }
 
 

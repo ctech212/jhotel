@@ -13,6 +13,8 @@ public class Pesanan
     private String jenisKamar;
     private boolean isDiproses;
     private boolean isSelesai;
+    private Room kamar;
+  
 
 
     /**
@@ -22,8 +24,8 @@ public class Pesanan
     */
     public Pesanan(double biaya, Customer pelanggan)
     {
-        this.biaya=biaya;
-        this.pelanggan=pelanggan;
+        this.biaya=biaya;//instance variable
+        this.pelanggan=pelanggan;//instance variable
     }
 
     /**
@@ -112,7 +114,15 @@ public class Pesanan
     */
     public void printData()
     {
-        System.out.printf("Biaya adalah %.1f", biaya);
+        System.out.printf("Biaya adalah %.1f\n", biaya);
+    }
+    
+    public void setRoom(Room kamar)
+    {
+    }
+    public Room getRoom()
+    {
+        return kamar;
     }
        
 }

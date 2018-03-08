@@ -1,6 +1,6 @@
 
 /**
- * Ini merupakan class Lokasi dimana pada kelas ini .
+ * Ini merupakan class Lokasi dimana pada kelas ini akan terdapat informasi tentang lokasi hotel.
  *
  * @author (Mochamad Fahmi Fajrin)
  * @version 01/03/2018
@@ -19,9 +19,9 @@ public class Lokasi
    */
 	public Lokasi(float x_coord, float y_coord, String deskripsiLokasi)
 	{
-		this.x_coord=x_coord;
-		this.y_coord=y_coord;
-		this.deskripsiLokasi=deskripsiLokasi;
+		this.x_coord=x_coord;//instance variable
+		this.y_coord=y_coord;//instance variable
+		this.deskripsiLokasi=deskripsiLokasi;//instance variable
 
 	}
 

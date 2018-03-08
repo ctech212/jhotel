@@ -1,16 +1,21 @@
 #BlueJ class context
 comment0.target=Customer
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Customer\ here.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ (Modul1,\ 22/02/2018)\r\n
+comment0.text=\r\n\ Ini\ merupakan\ class\ Customer,\ berisi\ method\ untuk\ mendapatkan\ informasi\ customer.\r\n\r\n\ @author\ (Mochamad\ Fahmi\ Fajrin)\r\n\ @version\ 01/03/2018\r\n
 comment1.params=id\ nama
-comment1.target=void\ Customer(int,\ java.lang.String)
+comment1.target=Customer(int,\ java.lang.String)
+comment1.text=\r\n\ ini\ merupakan\ method\ Customer,\ yang\ merupakan\ Contructor.\r\n\ @param\ id.\r\n\ @param\ nama.\r\n
 comment2.params=
 comment2.target=int\ getID()
+comment2.text=\r\n\ ini\ merupakan\ method\ getID,\ yang\ merupakan\ Accessor,\ method\ ini\ digunakan\ untuk\ mengambil\ informasi\ tentang\ ID\ customer.\r\n\ @param\ id.\r\n\ @return\ id.\r\n
 comment3.params=
 comment3.target=java.lang.String\ getNama()
+comment3.text=\r\n\ ini\ merupakan\ method\ getNama,\ yang\ merupakan\ Accessor,\ method\ ini\ digunakan\ untuk\ mengambil\ informasi\ tentang\ nama\ customer.\r\n\ @param\ nama.\r\n\ @return\ nama.\r\n
 comment4.params=id
 comment4.target=void\ setID(int)
+comment4.text=\r\n\ ini\ merupakan\ method\ setID,\ yang\ merupakan\ Mutator.\r\n\ @param\ id.\r\n
 comment5.params=nama
 comment5.target=void\ setNama(java.lang.String)
+comment5.text=\r\n\ ini\ merupakan\ method\ setNama,\ yang\ merupakan\ Mutator.\r\n\ @param\ nama.\r\n
 comment6.params=
 comment6.target=void\ printData()
 numComments=7
