@@ -7,14 +7,14 @@
  */
 public class DatabaseCustomer
 {
-    private String[] listCustomer;
+    private static String[] list_customer;
 
     /**
     * ini merupakan method addCustomer.
     * @param baru.
     * @return baru.
     */
-    public boolean addCustomer(Customer baru)
+    public static boolean addCustomer(Customer baru)
     {
         return false;
     }
@@ -24,7 +24,7 @@ public class DatabaseCustomer
     * @param nama.
     * @return nama.
     */
-    public boolean removeCustomer(int id)
+    public static boolean removeCustomer(int id)
     {
         return false;
     }
@@ -34,7 +34,7 @@ public class DatabaseCustomer
     * @param nothing.
     * @return nothing.
     */
-    public String[] getCustomerDatabase()
+    public static String[] getCustomerDatabase()
     {
         return null;
     }

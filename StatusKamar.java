@@ -1,9 +1,9 @@
 
 /**
- * Ini merupakan class Enum untuk StatusKamar.
+ * Ini merupakan class Enum untuk StatusKamar.Class ini akan membatasi status kamar.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 08-03-2018
+ * @version 10/03/2018
  */
 public enum StatusKamar
 {

@@ -60,7 +60,9 @@ public class Customer
     } 
     public void printData()
     {
-        System.out.printf("Nama Customer adalah %s\n", nama);
+        System.out.println("Customer");
+        System.out.printf("ID adalah %d\n", id);
+        System.out.printf("Nama adalah %s\n", nama);
     }
 
 }

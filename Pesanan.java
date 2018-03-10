@@ -3,14 +3,14 @@
  * Ini merupakan class Pesanan, terdapat beberapa method untuk kepetingan pesanan.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 01/03/2018
+ * @version 10/03/2018
  */
 public class Pesanan
 {
     private double biaya;
     private Customer pelanggan;
-    private String namaPelanggan;
-    private String jenisKamar;
+    private String nama_pelanggan;
+    private TipeKamar tipe_kamar;
     private boolean isDiproses;
     private boolean isSelesai;
     private Room kamar;
@@ -44,11 +44,22 @@ public class Pesanan
     * @return namaPelanggan.
     */
 
-    public String getPelanggan()
+    public Customer getPelanggan()
     {
-        return namaPelanggan;
+        return pelanggan;
     }
 
+    public String getNamaPelanggan()
+    {
+        return nama_pelanggan;
+    }
+
+    public TipeKamar getTipeKamar()
+    {
+        return tipe_kamar;
+    }
+
+    
     /**
     * ini merupakan method getStatusDiproses, yang merupakan Accessor.
     * @param isDiproses.
@@ -76,6 +87,11 @@ public class Pesanan
     * @param biaya
     */
 
+    public Room getRoom()
+    {
+        return kamar;
+    }
+
     public void setBiaya(double biaya)
     {
         this.biaya= biaya;
@@ -85,11 +101,20 @@ public class Pesanan
     * ini merupakan method setPelanggan, yang merupakan Mutator.
     * @param pelanggan
     */
-    public void setPelanggan(Customer baru)
+    public void setPelanggan(Customer pelanggan)
     {
-        pelanggan= baru;
+        this.pelanggan= pelanggan;
+    }
+    
+    public void setNamaPelanggan(String namaPelanggan)
+    {
+        namaPelanggan= nama_pelanggan;
     }
 
+    public void setTipeKamar(TipeKamar tipe_kamar)
+    {
+        this.tipe_kamar=tipe_kamar;
+    }
     /**
     * ini merupakan method setStatusDiproses, yang merupakan Mutator.
     * @param isDiproses.
@@ -108,21 +133,25 @@ public class Pesanan
         isSelesai=selesai;
     }
 
+    public void setRoom(Room kamar)
+    {
+        this.kamar=kamar;   
+    }
+
     /**
     * ini merupakan method printData, untuk menghasilkan outpu dari biaya.
     * @param biaya
     */
     public void printData()
     {
-        System.out.printf("Biaya adalah %.1f\n", biaya);
+        System.out.println("\nPesanan");
+        System.out.printf("Nama Pelanggan adalah "+ pelanggan.getNama());
+        System.out.printf("\nTipe Kamar adalah %s", tipe_kamar);
+        System.out.println("\nStatus Layanan Diproses adalah " + isDiproses);
+        System.out.println("Status Layanan selesai adalah " + isSelesai);
     }
     
-    public void setRoom(Room kamar)
-    {
-    }
-    public Room getRoom()
-    {
-        return kamar;
-    }
+
+
        
 }

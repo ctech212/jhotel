@@ -88,8 +88,10 @@ public class Hotel
     */
     public void printData()
     {
+    	System.out.println("Hotel");
     	System.out.printf("Nama Hotel: %s\n", nama);
+    	System.out.println("Lokasi Hotel:"+lokasi.getDeskripsi());
+    	System.out.printf("Bintang Hotel: %d\n", bintang);
     }
-
 
 }

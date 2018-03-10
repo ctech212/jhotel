@@ -7,14 +7,14 @@
  */
 public class DatabasePesanan
 {
-    private String[] listPesanan;
+    private static String[] list_pesanan;
 
     /**
     * ini merupakan method addPesanan.
     * @param baru.
     * @return baru.
     */
-    public boolean addPesanan(Pesanan baru){
+    public static boolean addPesanan(Pesanan baru){
         return false;
     }
 
@@ -23,7 +23,7 @@ public class DatabasePesanan
     * @param pesan.
     * @return pesan.
     */
-    public boolean removePesanan(Pesanan pesan){
+    public static boolean removePesanan(Pesanan pesan){
         return false;
     }
     
@@ -32,7 +32,7 @@ public class DatabasePesanan
     * @param nama.
     * @return nama.
     */
-    public String getPesanan(Customer cust){
+    public static Pesanan getPesanan(Customer cust){
         return null;
     }
 
@@ -41,7 +41,7 @@ public class DatabasePesanan
     * @param nothing.
     * @return nothing.
     */
-    public String[] getPesananDatabase(){
+    public static String[] getPesananDatabase(){
         return null;
     }
 
@@ -51,7 +51,7 @@ public class DatabasePesanan
     * @param pesan.
     * @return pesan.
     */
-    public void pesananDibatalkan(Pesanan pesan){
+    public static void pesananDibatalkan(Pesanan pesan){
 
     }
 }

@@ -93,7 +93,10 @@ public class Lokasi
     */
 	public void printData()
 	{
-		System.out.printf("Keterangan adalah %s", deskripsiLokasi);
+		System.out.println("Lokasi");
+		System.out.printf("Koordinat X adalah %f\n", x_coord);
+		System.out.printf("Koordinat Y adalah %f\n", y_coord);
+		System.out.printf("Deskripsi adalah %s\n", deskripsiLokasi);
 	}
 
 }
