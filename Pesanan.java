@@ -8,9 +8,8 @@
 public class Pesanan
 {
     private double biaya;
+    private double jumlahHari;
     private Customer pelanggan;
-    private String nama_pelanggan;
-    private TipeKamar tipe_kamar;
     private boolean isDiproses;
     private boolean isSelesai;
     private Room kamar;
@@ -22,10 +21,12 @@ public class Pesanan
     * @param biaya.
     * @param pelanggan.
     */
-    public Pesanan(double biaya, Customer pelanggan)
+    public Pesanan(double jumlahHari, Customer pelanggan, Room kamar)
     {
-        this.biaya=biaya;//instance variable
-        this.pelanggan=pelanggan;//instance variable
+        this.biaya=kamar.getDailyTariff()*jumlahHari;
+        this.jumlahHari=jumlahHari;//instance variable
+        this.pelanggan=pelanggan;//instance variablee
+        this.kamar=kamar;//instance variable
     }
 
     /**
@@ -37,7 +38,12 @@ public class Pesanan
     {
         return biaya;
     }
-
+    
+    public double getJumlahHari()
+    {
+        return jumlahHari;
+    }
+    
     /**
     * ini merupakan method getPelanggan, yang merupakan Accessor.
     * @param namaPelanggan.
@@ -47,16 +53,6 @@ public class Pesanan
     public Customer getPelanggan()
     {
         return pelanggan;
-    }
-
-    public String getNamaPelanggan()
-    {
-        return nama_pelanggan;
-    }
-
-    public TipeKamar getTipeKamar()
-    {
-        return tipe_kamar;
     }
 
     
@@ -82,20 +78,12 @@ public class Pesanan
         return isSelesai;
     }
 
-    /**
-    * ini merupakan method setBiaya, yang merupakan Mutator.
-    * @param biaya
-    */
 
     public Room getRoom()
     {
         return kamar;
     }
 
-    public void setBiaya(double biaya)
-    {
-        this.biaya= biaya;
-    }
 
     /**
     * ini merupakan method setPelanggan, yang merupakan Mutator.
@@ -106,15 +94,7 @@ public class Pesanan
         this.pelanggan= pelanggan;
     }
     
-    public void setNamaPelanggan(String namaPelanggan)
-    {
-        namaPelanggan= nama_pelanggan;
-    }
 
-    public void setTipeKamar(TipeKamar tipe_kamar)
-    {
-        this.tipe_kamar=tipe_kamar;
-    }
     /**
     * ini merupakan method setStatusDiproses, yang merupakan Mutator.
     * @param isDiproses.
@@ -137,6 +117,16 @@ public class Pesanan
     {
         this.kamar=kamar;   
     }
+    
+    /**
+    * ini merupakan method setBiaya, yang merupakan Mutator.
+    * @param biaya
+    */
+    public void setBiaya()
+    {
+        biaya=kamar.getDailyTariff()*jumlahHari;
+    }
+
 
     /**
     * ini merupakan method printData, untuk menghasilkan outpu dari biaya.
@@ -145,10 +135,11 @@ public class Pesanan
     public void printData()
     {
         System.out.println("\nPesanan");
-        System.out.printf("Nama Pelanggan adalah "+ pelanggan.getNama());
-        System.out.printf("\nTipe Kamar adalah %s", tipe_kamar);
-        System.out.println("\nStatus Layanan Diproses adalah " + isDiproses);
+        System.out.println("Nama Pelanggan adalah "+ pelanggan.getNama());
+        System.out.printf("Jumlah Hari adalah %f\n",jumlahHari);
+        System.out.println("Status Layanan Diproses adalah " + isDiproses);
         System.out.println("Status Layanan selesai adalah " + isSelesai);
+        System.out.println("Biaya adalah " + biaya);
     }
     
 
