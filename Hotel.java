@@ -20,9 +20,9 @@ public class Hotel
     */
     public Hotel(String nama, Lokasi lokasi, int bintang)
     {
-     	this.nama=nama;//instance variable
-     	this.lokasi=lokasi;//instance variable
-     	this.bintang=bintang;//instance variable
+        this.nama=nama;//instance variable
+        this.lokasi=lokasi;//instance variable
+        this.bintang=bintang;//instance variable
     }
 
     /**
@@ -32,7 +32,7 @@ public class Hotel
     */
     public int getBintang()
     {
-    	return bintang;
+        return bintang;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Hotel
     */
     public String getNama()
     {
-    	return nama;
+        return nama;
     }
 
     /**
@@ -52,7 +52,7 @@ public class Hotel
     */
     public Lokasi getLokasi()
     {
-    	return lokasi;
+        return lokasi;
     }
 
     /**
@@ -61,7 +61,7 @@ public class Hotel
     */
     public void setNama(String nama)
     {
-    	this.nama=nama;
+        this.nama=nama;
     }
 
     /**
@@ -70,7 +70,7 @@ public class Hotel
     */
     public void setLokasi(Lokasi lokasi)
     {
-    	this.lokasi=lokasi;
+        this.lokasi=lokasi;
     }
 
     /**
@@ -79,24 +79,20 @@ public class Hotel
     */
     public void setBintang(int bintang)
     {
-    	this.bintang=bintang;
+        this.bintang=bintang;
     }
     
-    public String toString()
-    {
-        return null;
-    }
+
 
     /**
     * ini merupakan method print, yang akan menghasilkan output nama hotel.
     * @param nama.
     */
-    public void printData()
+    public String toString()
     {
-    	System.out.println("Hotel");
-    	System.out.printf("Nama Hotel: %s\n", nama);
-    	System.out.println("Lokasi Hotel:"+lokasi.getDeskripsi());
-    	System.out.printf("Bintang Hotel: %d\n", bintang);
+        return "\nNama Hotel: "+nama+
+                "\nLokasi Hotel:"+lokasi.getDeskripsi()+
+                "\nBintang Hotel: "+bintang;
     }
 
 }

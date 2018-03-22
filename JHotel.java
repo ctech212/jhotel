@@ -25,6 +25,49 @@ public class JHotel
            Room single= new SingleRoom(hotel1,"45",true,StatusKamar.BOOKED);
            //Pesanan pesan1= new Pesanan(5,customer1,single);
            Customer cust1 = new Customer(34, "Mochamad Fahmi", new GregorianCalendar(2018,03,22).getTime());
+           cust1.getDOB();
+           
+         //Pesanan pesanan = new Pesanan();
+
+        //DatabasePesanan.addPesanan(pesanan);
+        
+        System.out.println("\n\ntoString kelas Customer untuk kondisi pertama : \n\n");
+        System.out.println(cust1.toString());
+        DatabasePesanan.removePesanan();
+        System.out.println("\n\ntoString kelas Customer untuk kondisi kedua   : \n\n");
+        System.out.println(cust1.toString());
+        
+        Lokasi lokasi = new Lokasi(99, 999, "asdasd");
+        Hotel hotel = new Hotel("Melsadasdsaati", lokasi, 7);
+        Room kamar = new SingleRoom(hotel, "GK2asd10", true, StatusKamar.VACANT);
+        Pesanan pesan = new Pesanan(10, cust1, kamar, new GregorianCalendar(2018,2,22).getTime());
+
+        kamar.setPesanan(pesan); 
+        
+        System.out.println("\n\ntoString kelas Room untuk kondisi pertama : \n\n");
+        System.out.println(kamar.toString());
+        kamar.setStatusAvailable(false);
+        System.out.println("\n\ntoString kelas Room untuk kondisi kedua   : \n\n");
+        System.out.println(kamar.toString());
+        
+        pesan.setStatusDiproses(true);
+        pesan.setStatusSelesai(false);
+        
+        System.out.println("\n\ntoString kelas Pesanan untuk kondisi pertama : \n\n");
+        System.out.println(pesan.toString());
+
+        pesan.setStatusDiproses(false);
+        pesan.setStatusSelesai(false);
+
+        System.out.println("\n\ntoString kelas Pesanan untuk kondisi kedua   : \n\n");
+        System.out.println(pesan.toString());
+        
+        pesan.setStatusDiproses(false);
+        pesan.setStatusSelesai(true);
+
+        System.out.println("\n\ntoString kelas Pesanan untuk kondisi ketiga   : \n\n");
+        System.out.println(pesan.toString());
+           
            //customer1.setEmail("mochfahmi.modul5@netlab.com");
            //System.out.printf("Email "+ customer1.getEmail());
         

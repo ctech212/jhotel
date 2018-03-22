@@ -1,4 +1,5 @@
-import java.util.Date;
+import java.util.*;
+import java.text.*;
 /**
  * Ini merupakan class Pesanan, terdapat beberapa method untuk kepetingan pesanan.
  *
@@ -22,12 +23,22 @@ public class Pesanan
     * @param biaya.
     * @param pelanggan.
     */
-    public Pesanan(double jumlahHari, Customer pelanggan, Room kamar)
+    public Pesanan(double jumlahHari, Customer pelanggan, Room kamar, int hari, int bulan, int tahun)
     {
         this.biaya=kamar.getDailyTariff()*jumlahHari;
         this.jumlahHari=jumlahHari;//instance variable
         this.pelanggan=pelanggan;//instance variablee
         this.kamar=kamar;//instance variable
+        tanggalPesan= new Date(hari,bulan,tahun);
+    }
+    
+    public Pesanan(double jumlahHari, Customer pelanggan, Room kamar, Date tanggalPesan)
+    {
+        this.biaya=kamar.getDailyTariff()*jumlahHari;
+        this.jumlahHari=jumlahHari;//instance variable
+        this.pelanggan=pelanggan;//instance variablee
+        this.kamar=kamar;//instance variable
+        this.tanggalPesan=tanggalPesan;
     }
 
     /**
@@ -87,6 +98,10 @@ public class Pesanan
     
     public Date getTanggalPesan()
     {
+        DateFormat formatter = new SimpleDateFormat("'DOB 'dd MMMM yyyy");
+        String output = formatter.format(tanggalPesan);
+        //System.out.print(output);
+        System.out.println(output);
         return tanggalPesan;
     }
 
@@ -138,24 +153,27 @@ public class Pesanan
         this.tanggalPesan=tanggalPesan;
     }
     
-    public String toString()
-    {
-        return null;
-    }
-
-
+  
     /**
     * ini merupakan method printData, untuk menghasilkan outpu dari biaya.
     * @param biaya
     */
-    public void printData()
+    public String toString()
     {
-        System.out.println("\nPesanan");
-        System.out.println("Nama Pelanggan adalah "+ pelanggan.getNama());
-        System.out.printf("Jumlah Hari adalah %f\n",jumlahHari);
-        System.out.println("Status Layanan Diproses adalah " + isDiproses);
-        System.out.println("Status Layanan selesai adalah " + isSelesai);
-        System.out.println("Biaya adalah " + biaya);
+        String final_status = "KOSONG";
+        
+        if (isDiproses == true && isSelesai == false){
+            final_status = "DIPROSES";
+        } else if (isDiproses == false && isSelesai == false){
+            final_status = "KOSONG";
+        } else if (isDiproses == false && isSelesai == true){
+            final_status = "SELESAI";
+        }
+        return "Dibuat Oleh " +pelanggan.getNama() +
+                ".Proses booking untuk" +kamar.getHotel()+
+                "Kamar Nomor " + kamar.getNomorKamar()+
+                "dengan tipe kamar yang diinginkan "+kamar.getTipeKamar()+
+                ". Status :" +final_status+ ".";
     }
     
 

@@ -7,7 +7,7 @@
  */
 public class DatabasePesanan
 {
-    private static String[] list_pesanan;
+    private static Pesanan list_pesanan;
 
     /**
     * ini merupakan method addPesanan.
@@ -43,6 +43,12 @@ public class DatabasePesanan
     */
     public static String[] getPesananDatabase(){
         return null;
+    }
+    
+    public static boolean removePesanan()
+    {   
+        list_pesanan = null;
+        return false;
     }
 
 

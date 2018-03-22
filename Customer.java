@@ -1,6 +1,7 @@
-import java.util.Date;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.text.*;
 
 /**
  * Ini merupakan class Customer, berisi method untuk mendapatkan informasi customer.
@@ -62,6 +63,10 @@ public class Customer
     
     public Date getDOB()
     {
+        DateFormat formatter = new SimpleDateFormat("'DOB 'dd MMMM yyyy");
+        String output = formatter.format(dob);
+        //System.out.print(output);
+        System.out.println(output);
         return dob;
     }
 
@@ -106,14 +111,22 @@ public class Customer
     
     public String toString()
     {
-        return null;
+        if(DatabasePesanan.getPesanan(this)!=null){
+            return "\nCustomer ID   : " + id +
+                   "\nName          : " + nama +
+                   "\nE-Mail        : " + email +
+                   "\nDate of Birth : " + dob +
+                   "\nBooking order is in progress";        
+        }
+       
+        else{
+            return "\nCustomer ID   : " + id +
+                   "\nName          : " + nama +
+                   "\nE-Mail        : " + email +
+                   "\nDate of Birth : " + dob;        
+        }
     }
     
-    public void printData()
-    {
-        System.out.println("Customer");
-        System.out.printf("ID adalah %d\n", id);
-        System.out.printf("Nama adalah %s\n", nama);
-    }
+    
 
 }
