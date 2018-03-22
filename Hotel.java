@@ -81,6 +81,11 @@ public class Hotel
     {
     	this.bintang=bintang;
     }
+    
+    public String toString()
+    {
+        return null;
+    }
 
     /**
     * ini merupakan method print, yang akan menghasilkan output nama hotel.

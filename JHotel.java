@@ -1,3 +1,4 @@
+import java.util.GregorianCalendar;
 
 /**
  * Ini merupakan class JHotel, terdapat fungsi main pada class ini.
@@ -19,46 +20,49 @@ public class JHotel
         
            System.out.printf("Welcome to JHotel\n");
            Lokasi lokasihotel1= new Lokasi(38,13,"Lokasi Hotel");
-           Customer customer1= new Customer(1506673813,"Fahmi");
+           //Customer customer1= new Customer(1506673813,"Fahmi");
            Hotel hotel1= new Hotel("Alexis",lokasihotel1,5);
            Room single= new SingleRoom(hotel1,"45",true,StatusKamar.BOOKED);
-           Pesanan pesan1= new Pesanan(5,customer1,single);
+           //Pesanan pesan1= new Pesanan(5,customer1,single);
+           Customer cust1 = new Customer(34, "Mochamad Fahmi", new GregorianCalendar(2018,03,22).getTime());
+           //customer1.setEmail("mochfahmi.modul5@netlab.com");
+           //System.out.printf("Email "+ customer1.getEmail());
         
-           lokasihotel1.printData();
-           customer1.printData();
-           hotel1.printData();
+    //        lokasihotel1.printData();
+    //        customer1.printData();
+    //        hotel1.printData();
         
-           single.setDailyTariff(1000000);
-           pesan1.setBiaya();
-           Administrasi.pesananDitugaskan(pesan1,single);
-           single.printData();
-           pesan1.printData();
+    //        single.setDailyTariff(1000000);
+    //        pesan1.setBiaya();
+    //        Administrasi.pesananDitugaskan(pesan1,single);
+    //        single.printData();
+    //        pesan1.printData();
            
-           if(single instanceof DoubleRoom)
-            {
-               System.out.printf("Benar Double Room\n");
-            }
-            else
-            {
-               System.out.printf("Salah, bukan Double Room\n");
-            }
+    //        if(single instanceof DoubleRoom)
+    //         {
+    //            System.out.printf("Benar Double Room\n");
+    //         }
+    //         else
+    //         {
+    //            System.out.printf("Salah, bukan Double Room\n");
+    //         }
             
-           Room doubleroom= new DoubleRoom(hotel1,"46",true,StatusKamar.VACANT);
-           Pesanan pesan2= new Pesanan(4,customer1,doubleroom);
-           doubleroom.setDailyTariff(1000000);
-           pesan2.setBiaya();
-           Administrasi.pesananDitugaskan(pesan2,doubleroom);
-           doubleroom.printData();
-           pesan2.printData();
+    //        Room doubleroom= new DoubleRoom(hotel1,"46",true,StatusKamar.VACANT);
+    //        Pesanan pesan2= new Pesanan(4,customer1,doubleroom);
+    //        doubleroom.setDailyTariff(1000000);
+    //        pesan2.setBiaya();
+    //        Administrasi.pesananDitugaskan(pesan2,doubleroom);
+    //        doubleroom.printData();
+    //        pesan2.printData();
            
-           if(doubleroom instanceof DoubleRoom)
-            {
-               System.out.printf("Benar Double Room\n");
-            }
-            else
-            {
-               System.out.printf("Salah, bukan Double Room\n");
-            }
+    //        if(doubleroom instanceof DoubleRoom)
+    //         {
+    //            System.out.printf("Benar Double Room\n");
+    //         }
+    //         else
+    //         {
+    //            System.out.printf("Salah, bukan Double Room\n");
+    //         }
     } 
 
     /**

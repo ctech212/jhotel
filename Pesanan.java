@@ -1,4 +1,4 @@
-
+import java.util.Date;
 /**
  * Ini merupakan class Pesanan, terdapat beberapa method untuk kepetingan pesanan.
  *
@@ -13,6 +13,7 @@ public class Pesanan
     private boolean isDiproses;
     private boolean isSelesai;
     private Room kamar;
+    private Date tanggalPesan;
   
 
 
@@ -83,6 +84,11 @@ public class Pesanan
     {
         return kamar;
     }
+    
+    public Date getTanggalPesan()
+    {
+        return tanggalPesan;
+    }
 
 
     /**
@@ -125,6 +131,16 @@ public class Pesanan
     public void setBiaya()
     {
         biaya=kamar.getDailyTariff()*jumlahHari;
+    }
+    
+    public void setTanggalPesan(Date tanggalPesan)
+    {
+        this.tanggalPesan=tanggalPesan;
+    }
+    
+    public String toString()
+    {
+        return null;
     }
 
 
