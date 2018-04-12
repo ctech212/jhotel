@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Administrasi
+comment0.text=\r\n\ Ini\ merupakan\ class\ Admisnistrasi,\ yang\ akan\ mengatur\ logika\ pemesanan\ dan\ pembatalan\ pesanan..\r\n\r\n\ @author\ Mochamad\ Fahmi\ Fajrin\r\n\ @version\ 10/03/2018\r\n
+comment1.params=pesan\ kamar
+comment1.target=void\ pesananDitugaskan(Pesanan,\ Room)
+comment1.text=\r\n\ ini\ merupakan\ method\ pesananDitugaskan,\ yang\ memproses\ ruangan\ yang\ akan\ di-assign.\r\n\ @param\ pesan.\r\n\ @param\ kamar.\r\n
+comment2.params=pesan\ kamar
+comment2.target=void\ roomAmbilPesanan(Pesanan,\ Room)
+comment2.text=\r\n\ ini\ merupakan\ method\ roomAmbilPesanan,\ yang\ menyatakan\ bahwa\ status\ ruangan\ sudah\ berubah\ menjadi\ \u201Cbooked\u201D\ dan\ \u201Cter-link\u201D\ dengan\ objek\ Pesanan\ yang\ diberikan.\r\n\ @param\ pesan.\r\n\ @param\ kamar.\r\n
+comment3.params=kamar
+comment3.target=void\ roomLepasPesanan(Room)
+comment3.text=\r\n\ ini\ merupakan\ method\ roomAmbilPesanan,\ yang\ menyatakan\ kalau\ status\ room\ menjadi\ \u201Cvacant\u201D\ dan\ \u201Cter-unlink\u201D\ dengan\ objek\ Pesanan\ apapun.\r\n\ @param\ kamar.\r\n
+comment4.params=kamar
+comment4.target=void\ pesananDibatalkan(Room)
+comment4.text=\r\n\ ini\ merupakan\ method\ pesananDibatalakan,\ yang\ mengubah\ status\ pesanan\ dan\ status\ room\ yang\ telah\ membatalkan\ pesanan\ serta\ me-unlink\ masing-masing\ objek.\r\n\ @param\ kamar.\r\n
+comment5.params=kamar
+comment5.target=void\ pesananSelesai(Room)
+comment5.text=\r\n\ ini\ merupakan\ method\ pesananSelesai,\ yang\ mengubah\ status\ pesanan\ dan\ status\ room\ yang\ telah\ menyelesaikan\ pesanan\ serta\ me-unlink\ masing-masing\ objek.\r\n\ @param\ kamar.\r\n
+comment6.params=pesan
+comment6.target=void\ pesananDibatalkan(Pesanan)
+comment6.text=\r\n\ ini\ merupakan\ method\ pesananDibatalkan,\ yang\ mengubah\ status\ pesanan\ dan\ status\ room\ yang\ telah\ membatalkan\ pesanan\ serta\ me-unlink\ masing-masing\ objek.\r\n\ @param\ pesan.\r\n
+comment7.params=pesan
+comment7.target=void\ pesananSelesai(Pesanan)
+comment7.text=\r\n\ ini\ merupakan\ method\ pesananSelesai,\ yang\ mengubah\ status\ pesanan\ dan\ status\ room\ yang\ telah\ menyelesaikan\ pesanan\ serta\ me-unlink\ masing-masing\ objek.\r\n\ @param\ pesan.\r\n
+numComments=8
