@@ -76,11 +76,11 @@ public class DatabaseRoom
 
 
 
-    public static boolean removeRoom(int id)
+    public static boolean removeRoom(Hotel hotel, String nomor_kamar)
     {
         for(Room kamar : ROOM_DATABASE)
         {
-            if(kamar.getHotel(hotel).equals() &&
+            if(kamar.getHotel().equals(hotel) &&
                     kamar.getNomorKamar().equals(nomor_kamar))
             {
                 Administrasi.pesananDibatalkan(kamar);
