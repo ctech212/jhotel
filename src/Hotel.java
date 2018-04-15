@@ -11,6 +11,7 @@ public class Hotel
     private String nama;
     private Lokasi lokasi;
     private int bintang;
+    private int id;
 
     /**
     * ini merupakan method Hotel, yang merupakan Contructor.
@@ -18,11 +19,17 @@ public class Hotel
     * @param lokasi
     * @param bintang
     */
-    public Hotel(String nama, Lokasi lokasi, int bintang)
+    public Hotel(String nama, Lokasi lokasi, int bintang, int id)
     {
         this.nama=nama;//instance variable
         this.lokasi=lokasi;//instance variable
         this.bintang=bintang;//instance variable
+        this.id=DatabaseHotel.getLastHotelID()+1;
+    }
+
+
+    public void setID(int id){
+        this.id = id;
     }
 
     /**
@@ -81,7 +88,10 @@ public class Hotel
     {
         this.bintang=bintang;
     }
-    
+
+    public int getID(){
+        return id;
+    }
 
 
     /**

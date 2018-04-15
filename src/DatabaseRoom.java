@@ -17,10 +17,10 @@ public class DatabaseRoom
 
     public static boolean addRoom(Room baru)
     {
-        for(Room kamar : ROOM_DATABASE)
+        for(Room room : ROOM_DATABASE)
         {
-            if(!kamar.getHotel().equals(baru.getHotel()) &&
-                    !kamar.getNomorKamar().equals(baru.getNomorKamar()))
+            if(!room.getHotel().equals(baru.getHotel()) &&
+                    !room.getNomorKamar().equals(baru.getNomorKamar()))
             {
                 ROOM_DATABASE.add(baru);
                 return true;
@@ -32,12 +32,12 @@ public class DatabaseRoom
 
     public static Room getRoom(Hotel hotel, String nomor_kamar)
     {
-        for(Room kamar : ROOM_DATABASE)
+        for(Room room : ROOM_DATABASE)
         {
-            if(kamar.getHotel().equals(hotel) &&
-                    kamar.getNomorKamar().equals(nomor_kamar))
+            if(room.getHotel().equals(hotel) &&
+                    room.getNomorKamar().equals(nomor_kamar))
             {
-                return kamar;
+                return room;
             }
         }
 
@@ -46,45 +46,45 @@ public class DatabaseRoom
 
     public static ArrayList<Room> getRoomsFromHotel(Hotel hotel)
     {
-        ArrayList<Room> tempRoom = new ArrayList<Room>();
+        ArrayList<Room> roomHotel = new ArrayList<Room>();
 
-        for(Room kamar : ROOM_DATABASE)
+        for(Room room : ROOM_DATABASE)
         {
-            if(kamar.getHotel().equals(hotel))
+            if(room.getHotel().equals(hotel))
             {
-                tempRoom.add(kamar);
+                roomHotel.add(room);
             }
         }
 
-        return tempRoom;
+        return roomHotel;
     }
 
     public static ArrayList<Room> getVacantRooms()
     {
-        ArrayList<Room> tempRoom = new ArrayList<Room>();
+        ArrayList<Room> roomHotel = new ArrayList<Room>();
 
-        for(Room kamar : ROOM_DATABASE)
+        for(Room room : ROOM_DATABASE)
         {
-            if(kamar.getStatusKamar().equals(StatusKamar.VACANT))
+            if(room.getStatusKamar().equals(StatusKamar.VACANT))
             {
-                tempRoom.add(kamar);
+                roomHotel.add(room);
             }
         }
 
-        return tempRoom;
+        return roomHotel;
     }
 
 
 
     public static boolean removeRoom(Hotel hotel, String nomor_kamar)
     {
-        for(Room kamar : ROOM_DATABASE)
+        for(Room room : ROOM_DATABASE)
         {
-            if(kamar.getHotel().equals(hotel) &&
-                    kamar.getNomorKamar().equals(nomor_kamar))
+            if(room.getHotel().equals(hotel) &&
+                    room.getNomorKamar().equals(nomor_kamar))
             {
-                Administrasi.pesananDibatalkan(kamar);
-                if(ROOM_DATABASE.remove(kamar))
+                Administrasi.pesananDibatalkan(room);
+                if(ROOM_DATABASE.remove(room))
                 {
                     return true;
                 }

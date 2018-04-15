@@ -19,20 +19,18 @@ public class Customer
 
     /**
     * ini merupakan method Customer, yang merupakan Contructor.
-    * @param id
     * @param nama
     */
-    public Customer(int id, String nama,int tanggal, int bulan, int tahun)
+    public Customer(String nama,int tanggal, int bulan, int tahun)
     {
-        this.id=id;
+        this.id = DatabaseCustomer.getLastCustomerID() + 1;
         this.nama=nama;
         this.dob= new Date(tanggal,bulan,tahun);
         
     }
     
-    public Customer(int id, String nama, Date dob)
+    public Customer(String nama, Date dob)
     {
-        this.id=id;
         this.nama=nama;
         this.dob=dob;
     }
@@ -110,23 +108,23 @@ public class Customer
         this.dob=dob;
     }
     
-//    public String toString()
-//    {
-//        if(DatabasePesanan.getPesanan(this)!=null){
-//            return "\nCustomer ID   : " + id +
-//                   "\nName          : " + nama +
-//                   "\nE-Mail        : " + email +
-//                   "\nDate of Birth : " + dob +
-//                   "\nBooking order is in progress";
-//        }
-//
-//        else{
-//            return "\nCustomer ID   : " + id +
-//                   "\nName          : " + nama +
-//                   "\nE-Mail        : " + email +
-//                   "\nDate of Birth : " + dob;
-//        }
-//    }
+    public String toString()
+    {
+        if(DatabasePesanan.getPesananAktif(this)!=null){
+            return "\nCustomer ID   : " + id +
+                   "\nName          : " + nama +
+                   "\nE-Mail        : " + email +
+                   "\nDate of Birth : " + dob +
+                   "\nBooking order is in progress";
+        }
+
+        else{
+            return "\nCustomer ID   : " + id +
+                   "\nName          : " + nama +
+                   "\nE-Mail        : " + email +
+                   "\nDate of Birth : " + dob;
+        }
+    }
     
     
 

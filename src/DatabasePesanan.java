@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class DatabasePesanan {
     private static final ArrayList<Pesanan> PESANAN_DATABASE = new ArrayList<Pesanan>();
-    private static final int LAST_PESANAN_ID = 0;
+    private static int LAST_PESANAN_ID = 0;
 
     /**
      * ini merupakan method addPesanan.
@@ -17,21 +17,11 @@ public class DatabasePesanan {
      * @return baru.
      */
     public static boolean addPesanan(Pesanan baru) {
-        if(PESANAN_DATABASE.contains(baru))
-        {
-            if(baru.getStatusAktif())
-            {
-                return false;
-            }
-            else
-            {
-                PESANAN_DATABASE.add(baru);
-                return true;
-            }
-        }
-        else
-        {
+        if(baru.getStatusAktif()) {
+            return false;
+        } else{
             PESANAN_DATABASE.add(baru);
+            DatabasePesanan.LAST_PESANAN_ID ++;
             return true;
         }
     }
@@ -49,10 +39,9 @@ public class DatabasePesanan {
      * @return nama.
      */
     public static Pesanan getPesanan(Room kamar) {
-        for(int i=0;i<PESANAN_DATABASE.size();i++){
-            Pesanan pesan=PESANAN_DATABASE.get(i);
-            if (pesan.getRoom()==kamar){
-                return pesan;
+        for(Pesanan pesanan : PESANAN_DATABASE){
+            if(pesanan.getRoom() == kamar){
+                return pesanan;
             }
         }
         return null;
@@ -60,19 +49,18 @@ public class DatabasePesanan {
 
     public static Pesanan getPesananAktif(Customer pelanggan) {
         for(int i=0;i<PESANAN_DATABASE.size();i++){
-            Pesanan pesan=PESANAN_DATABASE.get(i);
-            if (pesan.getPelanggan()==pelanggan && pesan.getStatusAktif()==true){
-                return pesan;
+            Pesanan pesanan=PESANAN_DATABASE.get(i);
+            if (pesanan.getPelanggan()==pelanggan && pesanan.getStatusAktif()==true){
+                return pesanan;
             }
         }
         return null;
     }
 
     public static Pesanan getPesanan(int id) {
-        for(int i=0;i<PESANAN_DATABASE.size();i++){
-            Pesanan pesan=PESANAN_DATABASE.get(i);
-            if (pesan.getID()==id){
-                return pesan;
+        for(Pesanan pesanan : PESANAN_DATABASE){
+            if(pesanan.getID() == id){
+                return pesanan;
             }
         }
         return null;

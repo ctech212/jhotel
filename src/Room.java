@@ -11,13 +11,12 @@ public abstract class Room {
     private Hotel hotel;
     private String nomor_kamar;
     private StatusKamar status_kamar;
-    private Pesanan pesan;
     protected double dailyTariff;
 
     public Room(Hotel hotel, String nomor_kamar, StatusKamar status_kamar) {
         this.hotel = hotel;//instance variable
         this.nomor_kamar = nomor_kamar;//instance variable
-        this.status_kamar = status_kamar;//instance variable
+        this.status_kamar = status_kamar.VACANT;//instance variable
 
     }
 
@@ -25,9 +24,6 @@ public abstract class Room {
         return hotel;
     }
 
-    public Pesanan getPesanan(){
-        return pesan;
-    }
 
     public String getNomorKamar() {
         return nomor_kamar;
@@ -61,25 +57,20 @@ public abstract class Room {
         this.status_kamar = status_kamar;
     }
 
-    public void setPesanan(Pesanan pesan) {
-        this.pesan = pesan;
-    }
-
 
     public String toString() {
-        return null;
-//        if (isAvailable) {
-//            return "Nama Hotel adalah  " + hotel.getNama() +
-//                    "Tipe Kamar:" + getTipeKamar() +
-//                    "Harga: " + getDailyTariff() +
-//                    "Status Kamar: " + status_kamar;
-//        } else {
-//            return "Nama Hotel      : " + hotel.getNama() +
-//                    "Tipe Kamar      : " + getTipeKamar() +
-//                    "Harga           : " + getDailyTariff() +
-//                    "Status Kamar    : " + status_kamar +
-//                    "Pelanggan       : " + pesan.getPelanggan().getNama();
-//        }
+        if (DatabasePesanan.getPesanan(this) == null) {
+            return "\nNama hotel  : " + hotel.getNama() +
+                    "\nTipe kamar  : " + getTipeKamar() +
+                    "\nHarga       : " + dailyTariff +
+                    "\nStatus kamar: " + status_kamar;
+        } else {
+            return "\nNama hotel  : " + hotel.getNama() +
+                    "\nTipe kamar  : " + getTipeKamar().toString() +
+                    "\nHarga       : " + dailyTariff +
+                    "\nStatus kamar: " + status_kamar +
+                    "\nPelanggan   : " + DatabasePesanan.getPesanan(this).getPelanggan().getNama();
+        }
     }
 
 }
