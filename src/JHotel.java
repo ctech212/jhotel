@@ -16,7 +16,8 @@ public class JHotel
    * @return Nothing.
    */
     public static void main(String[] args) 
-    { 
+    {
+
 //
 //           System.out.printf("Welcome to JHotel\n");
 //           Lokasi lokasihotel1= new Lokasi(38,13,"Lokasi Hotel");

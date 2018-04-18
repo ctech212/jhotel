@@ -19,7 +19,7 @@ public class Hotel
     * @param lokasi
     * @param bintang
     */
-    public Hotel(String nama, Lokasi lokasi, int bintang, int id)
+    public Hotel(String nama, Lokasi lokasi, int bintang)
     {
         this.nama=nama;//instance variable
         this.lokasi=lokasi;//instance variable
@@ -99,9 +99,9 @@ public class Hotel
     */
     public String toString()
     {
-        return "\nNama Hotel: "+nama+
-                "\nLokasi Hotel:"+lokasi.getDeskripsi()+
-                "\nBintang Hotel: "+bintang;
+        return "\nNama Hotel: "+getNama()+
+                "\nLokasi Hotel:"+getLokasi().getDeskripsi()+
+                "\nBintang Hotel: "+getBintang();
     }
 
 }

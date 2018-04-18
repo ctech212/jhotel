@@ -43,11 +43,11 @@ public class Administrasi
     */
     public static void pesananSelesai(Room kamar)
     {
-        //Pesanan pesan=kamar.getPesanan();
-        //pesan.setStatusSelesai(true);
-        //pesan.setStatusDiproses(false);
-        kamar.setStatusKamar(StatusKamar.VACANT);
-        //roomLepasPesanan(kamar);
+        Pesanan pesan = DatabasePesanan.getPesanan(kamar);
+        pesan.setStatusSelesai(true);
+        pesan.setStatusDiproses(false);
+        pesan.setStatusAktif(false);
+        roomLepasPesanan(kamar);
     }
     
     /**
@@ -56,25 +56,24 @@ public class Administrasi
     */
     public static void pesananDibatalkan(Pesanan pesan)
     {
-        //roomLepasPesanan(pesan.getRoom());
+        roomLepasPesanan(pesan.getRoom());
         pesan.setStatusSelesai(false);
         pesan.setStatusDiproses(false);
         pesan.setStatusAktif(false);
         pesan.setRoom(null);
-        pesan.getRoom().setStatusKamar(StatusKamar.VACANT);
     }
-    
+
+    public static void roomLepasPesanan(Room kamar){
+        kamar.setStatusKamar(StatusKamar.VACANT);
+    }
     /**
     * ini merupakan method pesananSelesai, yang mengubah status pesanan dan status room yang telah menyelesaikan pesanan serta me-unlink masing-masing objek.
-    * @param pesan
     */
     public static void pesananSelesai(Pesanan pesan)
     {
-        //roomLepasPesanan(pesan.getRoom());
+        roomLepasPesanan(pesan.getRoom());
         pesan.setStatusSelesai(true);
         pesan.setStatusDiproses(false);
         pesan.setRoom(null);
-        pesan.setStatusAktif(false);
-        pesan.getRoom().setStatusKamar(StatusKamar.VACANT);
     }
 }

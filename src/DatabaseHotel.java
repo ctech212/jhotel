@@ -10,29 +10,25 @@ public class DatabaseHotel {
     private static ArrayList<Hotel> HOTEL_DATABASE = new ArrayList<Hotel>();
     private static int LAST_HOTEL_ID = 0;
 
-    private static String[] list_hotel;
 
     public static boolean addHotel(Hotel baru) {
-        for (Hotel hotel : HOTEL_DATABASE) {
-            if (baru.getID() != hotel.getID()) {
+        for (int i = 0; i < HOTEL_DATABASE.size(); i++) {
+            Hotel hotel = HOTEL_DATABASE.get(i);
+            if (hotel.getID()==baru.getID()){
                 return false;
             }
         }
-
+        LAST_HOTEL_ID=baru.getID();
         HOTEL_DATABASE.add(baru);
-        DatabaseHotel.LAST_HOTEL_ID++;
         return true;
     }
 
-    public static Hotel getHotel(int id) {
-        for (Hotel hotel : HOTEL_DATABASE) {
-            if (hotel.getID() == id) {
-                return hotel;
-            }
-        }
-
-        return null;
+    public static int getLastHotelID() {
+        return LAST_HOTEL_ID;
     }
+
+
+
 
     public static boolean removeHotel(int id) {
         for(Hotel hotel : HOTEL_DATABASE){
@@ -48,11 +44,18 @@ public class DatabaseHotel {
         return false;
     }
 
-    public static ArrayList<Hotel> getHotelDatabase() {
-        return HOTEL_DATABASE;
+    public static Hotel getHotel(int id) {
+        for (int i = 0; i < HOTEL_DATABASE.size(); i++) {
+            Hotel hotel = HOTEL_DATABASE.get(i);
+            if (hotel.getID()==id){
+                return hotel;
+            }
+        }
+        return null;
     }
 
-    public static int getLastHotelID() {
-        return LAST_HOTEL_ID;
+
+    public static ArrayList<Hotel> getHotelDatabase() {
+        return HOTEL_DATABASE;
     }
 }

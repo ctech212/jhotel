@@ -16,6 +16,7 @@ public class Customer
     protected String nama;
     protected String email;
     protected Date dob;
+    SimpleDateFormat dmy = new SimpleDateFormat ("dd MMMMMMMMM yyyy");
 
     /**
     * ini merupakan method Customer, yang merupakan Contructor.
@@ -25,7 +26,7 @@ public class Customer
     {
         this.id = DatabaseCustomer.getLastCustomerID() + 1;
         this.nama=nama;
-        this.dob= new Date(tanggal,bulan,tahun);
+        this.dob= new GregorianCalendar(tahun, bulan-1, tanggal).getTime();;
         
     }
     
