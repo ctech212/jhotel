@@ -15,12 +15,12 @@ public class DatabaseRoom
         return ROOM_DATABASE;
     }
 
-    public static boolean addRoom(Room baru)
+    public static boolean addRoom(Room baru) throws RoomSudahAdaException
     {
         for (int i = 0; i < ROOM_DATABASE.size(); i++) {
             Room room = ROOM_DATABASE.get(i);
-            if (room.getHotel().equals(baru.getHotel())&&room.getNomorKamar()==baru.getNomorKamar()){
-                return false;
+            if (room.getHotel()==(baru.getHotel())&&room.getNomorKamar()==baru.getNomorKamar()){
+                throw new RoomSudahAdaException(baru);
             }
         }
         ROOM_DATABASE.add(baru);
@@ -31,7 +31,7 @@ public class DatabaseRoom
     {
         for (int i = 0; i < ROOM_DATABASE.size(); i++) {
             Room room = ROOM_DATABASE.get(i);
-            if (room.getHotel().equals(hotel)&&room.getNomorKamar()==nomor_kamar){
+            if (room.getHotel().equals(hotel)&&room.getNomorKamar().equals(nomor_kamar)){
                 return room;
             }
         }
@@ -64,25 +64,22 @@ public class DatabaseRoom
 
 
 
-    public static boolean removeRoom(Hotel hotel, String nomor_kamar)
+    public static boolean removeRoom(Hotel hotel, String nomor_kamar) throws RoomTidakDitemukanException
     {
-        for (int i = 0; i < ROOM_DATABASE.size(); i++) {
-            Room room = ROOM_DATABASE.get(i);
-            if (room.getHotel().equals(hotel)&&room.getNomorKamar()==nomor_kamar){
-                if(DatabasePesanan.getPesanan(room) != null)
-                {
-                    Administrasi.pesananDibatalkan(room);
-                }
-
-                if(ROOM_DATABASE.remove(room))
+        for(Room kamar : ROOM_DATABASE)
+        {
+            if(kamar.getHotel().equals(hotel) && kamar.getNomorKamar().equals(nomor_kamar))
+            {
+                Administrasi.pesananDibatalkan(kamar);
+                if(ROOM_DATABASE.remove(kamar))
                 {
                     return true;
                 }
             }
         }
-        return false;
-    }
-    
 
+        throw new RoomTidakDitemukanException(hotel, nomor_kamar);
+        //return false;
+    }
 
 }

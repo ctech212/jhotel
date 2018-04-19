@@ -11,11 +11,11 @@ public class DatabaseHotel {
     private static int LAST_HOTEL_ID = 0;
 
 
-    public static boolean addHotel(Hotel baru) {
+    public static boolean addHotel(Hotel baru) throws HotelSudahAdaException {
         for (int i = 0; i < HOTEL_DATABASE.size(); i++) {
             Hotel hotel = HOTEL_DATABASE.get(i);
-            if (hotel.getID()==baru.getID()){
-                return false;
+            if (hotel.getID()==baru.getID()||(hotel.getNama()==baru.getNama() && hotel.getLokasi()==baru.getLokasi())){
+                throw new HotelSudahAdaException(baru);
             }
         }
         LAST_HOTEL_ID=baru.getID();
@@ -27,21 +27,27 @@ public class DatabaseHotel {
         return LAST_HOTEL_ID;
     }
 
-
-
-
-    public static boolean removeHotel(int id) {
-        for(Hotel hotel : HOTEL_DATABASE){
-            if(hotel.getID() == id){
-                for(Room room : DatabaseRoom.getRoomsFromHotel(hotel)){
-                    DatabaseRoom.removeRoom(hotel, room.getNomorKamar());
+    public static boolean removeHotel(int id) throws HotelTidakDitemukanException
+    {
+        for (int i = 0; i < HOTEL_DATABASE.size(); i++) {
+            Hotel hotel = HOTEL_DATABASE.get(i);
+            if (hotel.getID()==id){
+                ArrayList<Room> KAMAR_TEST = DatabaseRoom.getRoomsFromHotel(hotel);
+                for (int x = 0; x < KAMAR_TEST.size(); x++){
+                    Room kamar = KAMAR_TEST.get(x);
+                    try {
+                        DatabaseRoom.removeRoom(hotel, kamar.getNomorKamar());
+                    } catch (RoomTidakDitemukanException test){
+                        System.out.println(test.getPesan());
+                    }
                 }
-                HOTEL_DATABASE.remove(hotel);
-                return true;
+                if(HOTEL_DATABASE.remove(hotel))
+                {
+                    return true;
+                }
             }
         }
-
-        return false;
+        throw new HotelTidakDitemukanException(id);
     }
 
     public static Hotel getHotel(int id) {

@@ -10,9 +10,9 @@ public class PremiumRoom extends Room
     private static TipeKamar TIPE_KAMAR = TipeKamar.PREMIUM;
     
     
-    public PremiumRoom(Hotel hotel, String nomor_kamar, StatusKamar status_kamar)
+    public PremiumRoom(Hotel hotel, String nomor_kamar)
     {
-         super(hotel, nomor_kamar, status_kamar);
+         super(hotel, nomor_kamar);
     }
     
     public TipeKamar getTipeKamar(){

@@ -22,18 +22,19 @@ public class Customer
     * ini merupakan method Customer, yang merupakan Contructor.
     * @param nama
     */
-    public Customer(String nama,int tanggal, int bulan, int tahun)
+    public Customer(String nama,int tanggal, int bulan, int tahun, String email)
     {
         this.id = DatabaseCustomer.getLastCustomerID() + 1;
         this.nama=nama;
         this.dob= new GregorianCalendar(tahun, bulan-1, tanggal).getTime();;
-        
+        this.email=email;
     }
     
-    public Customer(String nama, Date dob)
+    public Customer(String nama, Date dob, String email)
     {
         this.nama=nama;
         this.dob=dob;
+        this.email=email;
     }
 
     /**

@@ -32,11 +32,11 @@ public class DatabasePesanan {
      * @param baru
      * @return baru.
      */
-    public static boolean addPesanan(Pesanan baru) {
+    public static boolean addPesanan(Pesanan baru) throws PesananSudahAdaException {
         for (int i = 0; i < PESANAN_DATABASE.size(); i++) {
             Pesanan pesanan = PESANAN_DATABASE.get(i);
             if (pesanan.getStatusAktif()==true&&pesanan.getID()==baru.getID()){
-                return false;
+                throw new PesananSudahAdaException(baru);
             }
         }
         LAST_PESANAN_ID=baru.getID();
@@ -48,30 +48,33 @@ public class DatabasePesanan {
      * ini merupakan method removePesanan.
      * @return pesan.
      */
-    public static boolean removePesanan(Pesanan pesan)
+    public static boolean removePesanan(Pesanan pesan) throws PesananTidakDitemukanException
     {
-        for (int i = 0; i < PESANAN_DATABASE.size(); i++) {
-            Pesanan tes = PESANAN_DATABASE.get(i);
-            if (tes.equals(pesan)){
-                if(tes.getRoom() != null)
+        for(Pesanan pesanan : PESANAN_DATABASE)
+        {
+            if(pesanan.equals(pesan))
+            {
+                if(pesanan.getRoom() != null)
                 {
-                    Administrasi.pesananDibatalkan(tes);
+                    Administrasi.pesananDibatalkan(pesanan);
                 }
                 else
                 {
-                    if(tes.getStatusAktif())
+                    if(pesanan.getStatusAktif())
                     {
-                        tes.setStatusAktif(false);
+                        pesanan.setStatusAktif(false);
                     }
                 }
 
-                if(PESANAN_DATABASE.remove(tes))
+                if(PESANAN_DATABASE.remove(pesanan))
                 {
                     return true;
                 }
             }
         }
-        return false;
+
+        throw new PesananTidakDitemukanException(pesan.getPelanggan());
+        //return false;
     }
     /**
      * ini merupakan method getPesanan, yang merupakan Accessor.

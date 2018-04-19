@@ -10,9 +10,9 @@ public class DoubleRoom extends Room
     private Customer customer2;
     private static TipeKamar TIPE_KAMAR=TipeKamar.DOUBLE;
     
-    public DoubleRoom(Hotel hotel,String nomor_kamar,StatusKamar status_kamar)
+    public DoubleRoom(Hotel hotel,String nomor_kamar)
         {
-            super(hotel,nomor_kamar,status_kamar);
+            super(hotel,nomor_kamar);
         }
         
     public Customer getCustomer2()

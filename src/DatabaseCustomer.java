@@ -29,12 +29,12 @@ public class DatabaseCustomer
     * ini merupakan method addCustomer.
     * @return baru.
     */
-    public static boolean addCustomer(Customer baru)
+    public static boolean addCustomer(Customer baru) throws PelangganSudahAdaException
     {
 
         for(Customer customer : CUSTOMER_DATABASE){
-            if(baru.getID() == customer.getID()){
-                return false;
+            if(baru.getID() == customer.getID()||baru.getEmail()==customer.getEmail()){
+                throw new PelangganSudahAdaException(baru);
             }
         }
 
@@ -59,23 +59,24 @@ public class DatabaseCustomer
 
     * @return nama
     */
-    public static boolean removeCustomer(int id)
+    public static boolean removeCustomer(int id) throws PelangganTidakDitemukanException
     {
-
-        for(Customer customer : CUSTOMER_DATABASE){
-            if(customer.getID() == id){
-                for(Pesanan pesanan : DatabasePesanan.getPesananDatabase()){
-                    if(pesanan.getPelanggan() == customer){
-                        DatabasePesanan.removePesanan(pesanan);
-                    }
+        for (int i = 0; i < CUSTOMER_DATABASE.size(); i++) {
+            Customer customer = CUSTOMER_DATABASE.get(i);
+            if (customer.getID()==id){
+                Pesanan pesan = DatabasePesanan.getPesananAktif(customer);
+                try {
+                    DatabasePesanan.removePesanan(pesan);
+                } catch (PesananTidakDitemukanException test){
+                    System.out.println(test.getPesan());
                 }
-
-                CUSTOMER_DATABASE.remove(customer);
-                return true;
+                if(CUSTOMER_DATABASE.remove(customer))
+                {
+                    return true;
+                }
             }
         }
-
-        return false;
+        throw new PelangganTidakDitemukanException(id);
     }
 
 }
