@@ -18,25 +18,28 @@ public class Customer
     protected String nama;
     protected String email;
     protected Date dob;
+    protected String password;
     SimpleDateFormat dmy = new SimpleDateFormat ("dd MMMMMMMMM yyyy");
 
     /**
     * ini merupakan method Customer, yang merupakan Contructor.
     * @param nama
     */
-    public Customer(String nama,int tanggal, int bulan, int tahun, String email)
+    public Customer(String nama,int tanggal, int bulan, int tahun, String email, String password)
     {
         this.id = DatabaseCustomer.getLastCustomerID() + 1;
         this.nama=nama;
         this.dob= new GregorianCalendar(tahun, bulan-1, tanggal).getTime();;
         this.email=email;
+        this.password=password;
     }
     
-    public Customer(String nama, Date dob, String email)
+    public Customer(String nama, Date dob, String email, String password)
     {
         this.nama=nama;
         this.dob=dob;
         this.email=email;
+        this.password=password;
     }
 
     /**
@@ -58,6 +61,11 @@ public class Customer
     {
         return nama;
     }
+    public String getPassword()
+    {
+        return password;
+    }
+
     
     public String getEmail()
     {
@@ -89,6 +97,11 @@ public class Customer
     public void setNama(String nama)
     {
         this.nama=nama;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password=password;
     }
     
     public void setEmail(String email)

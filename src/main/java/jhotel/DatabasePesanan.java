@@ -83,10 +83,10 @@ public class DatabasePesanan {
      *
      * @return nama.
      */
-    public static Pesanan getPesanan(Room kamar) {
+    public static Pesanan getPesananAktif(Room kamar) {
         for (int i = 0; i < PESANAN_DATABASE.size(); i++) {
             Pesanan pesanan= PESANAN_DATABASE.get(i);
-            if (pesanan.getRoom()==kamar){
+            if (pesanan.getRoom()==kamar && pesanan.getStatusAktif()==true){
                 return pesanan;
             }
         }

@@ -8,18 +8,16 @@ import java.util.ArrayList;
  * @author Mochamad Fahmi Fajrin
  * @version 01/03/2018
  */
-public class DatabaseCustomer
-{
+public class DatabaseCustomer {
     private static ArrayList<Customer> CUSTOMER_DATABASE = new ArrayList<Customer>();
     private static int LAST_CUSTOMER_ID = 0;
 
     /**
      * ini merupakan method getCustomerDatabase, yang merupakan Accessor.
-
+     *
      * @return nothing.
      */
-    public static ArrayList<Customer> getCustomerDatabase()
-    {
+    public static ArrayList<Customer> getCustomerDatabase() {
         return CUSTOMER_DATABASE;
     }
 
@@ -28,14 +26,14 @@ public class DatabaseCustomer
     }
 
     /**
-    * ini merupakan method addCustomer.
-    * @return baru.
-    */
-    public static boolean addCustomer(Customer baru) throws PelangganSudahAdaException
-    {
+     * ini merupakan method addCustomer.
+     *
+     * @return baru.
+     */
+    public static boolean addCustomer(Customer baru) throws PelangganSudahAdaException {
 
-        for(Customer customer : CUSTOMER_DATABASE){
-            if(baru.getID() == customer.getID()||baru.getEmail()==customer.getEmail()){
+        for (Customer customer : CUSTOMER_DATABASE) {
+            if (baru.getID() == customer.getID() || baru.getEmail() == customer.getEmail()) {
                 throw new PelangganSudahAdaException(baru);
             }
         }
@@ -45,10 +43,19 @@ public class DatabaseCustomer
         return true;
     }
 
-    public static Customer getCustomer(int id)
-    {
-        for(Customer customer : CUSTOMER_DATABASE){
-            if(customer.getID() == id){
+    public static Customer getCustomer(int id) {
+        for (Customer customer : CUSTOMER_DATABASE) {
+            if (customer.getID() == id) {
+                return customer;
+            }
+        }
+
+        return null;
+    }
+
+    public static Customer getCustomerLogin(String email, String password) {
+        for (Customer customer : CUSTOMER_DATABASE) {
+            if (customer.getEmail().equals(email) && customer.getPassword().equals(password)) {
                 return customer;
             }
         }
@@ -57,23 +64,21 @@ public class DatabaseCustomer
     }
 
     /**
-    * ini merupakan method removeCustomer.
-
-    * @return nama
-    */
-    public static boolean removeCustomer(int id) throws PelangganTidakDitemukanException
-    {
+     * ini merupakan method removeCustomer.
+     *
+     * @return nama
+     */
+    public static boolean removeCustomer(int id) throws PelangganTidakDitemukanException {
         for (int i = 0; i < CUSTOMER_DATABASE.size(); i++) {
             Customer customer = CUSTOMER_DATABASE.get(i);
-            if (customer.getID()==id){
+            if (customer.getID() == id) {
                 Pesanan pesan = DatabasePesanan.getPesananAktif(customer);
                 try {
                     DatabasePesanan.removePesanan(pesan);
-                } catch (PesananTidakDitemukanException test){
+                } catch (PesananTidakDitemukanException test) {
                     System.out.println(test.getPesan());
                 }
-                if(CUSTOMER_DATABASE.remove(customer))
-                {
+                if (CUSTOMER_DATABASE.remove(customer)) {
                     return true;
                 }
             }
