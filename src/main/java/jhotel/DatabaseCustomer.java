@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Ini merupakan class DatabaseCustomer, dimana pada class ini terdapat method untuk mendapatkan atau menghapus informasi atau database Customer.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 01/03/2018
+ * @version 15/05/2018
  */
 public class DatabaseCustomer {
     private static ArrayList<Customer> CUSTOMER_DATABASE = new ArrayList<Customer>();
@@ -15,18 +15,24 @@ public class DatabaseCustomer {
     /**
      * ini merupakan method getCustomerDatabase, yang merupakan Accessor.
      *
-     * @return nothing.
+     * @return CUSTOMER_DATABASE.
      */
     public static ArrayList<Customer> getCustomerDatabase() {
         return CUSTOMER_DATABASE;
     }
 
+
+    /**
+     * ini merupakan method getLastCustomerID, yang merupakan Accessor.
+     *
+     * @return LAST_CUSTOMER_ID
+     */
     public static int getLastCustomerID() {
         return LAST_CUSTOMER_ID;
     }
 
     /**
-     * ini merupakan method addCustomer.
+     * ini merupakan method addCustomer, untuk menambahkan customer ke database.
      *
      * @return baru.
      */
@@ -43,6 +49,11 @@ public class DatabaseCustomer {
         return true;
     }
 
+    /**
+     * ini merupakan method getCustomer, yang merupakan Accessor.
+     *
+     * @return customer
+     */
     public static Customer getCustomer(int id) {
         for (Customer customer : CUSTOMER_DATABASE) {
             if (customer.getID() == id) {
@@ -53,6 +64,11 @@ public class DatabaseCustomer {
         return null;
     }
 
+    /**
+     * ini merupakan method getCustomerLogin, yang merupakan Accessor.
+     *
+     * @return customer
+     */
     public static Customer getCustomerLogin(String email, String password) {
         for (Customer customer : CUSTOMER_DATABASE) {
             if (customer.getEmail().equals(email) && customer.getPassword().equals(password)) {
@@ -64,9 +80,9 @@ public class DatabaseCustomer {
     }
 
     /**
-     * ini merupakan method removeCustomer.
+     * ini merupakan method removeCustomer, untuk menghapus customer dari database.
      *
-     * @return nama
+     * @return customer
      */
     public static boolean removeCustomer(int id) throws PelangganTidakDitemukanException {
         for (int i = 0; i < CUSTOMER_DATABASE.size(); i++) {

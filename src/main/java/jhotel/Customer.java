@@ -10,70 +10,92 @@ import java.util.Date;
  * Ini merupakan class Customer, berisi method untuk mendapatkan informasi customer.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 01/03/2018
+ * @version 15/05/2018
  */
-public class Customer
-{
+public class Customer {
     protected int id;
     protected String nama;
     protected String email;
     protected Date dob;
     protected String password;
-    SimpleDateFormat dmy = new SimpleDateFormat ("dd MMMMMMMMM yyyy");
+    SimpleDateFormat dmy = new SimpleDateFormat("dd MMMMMMMMM yyyy");
 
     /**
-    * ini merupakan method Customer, yang merupakan Contructor.
-    * @param nama
-    */
-    public Customer(String nama,int tanggal, int bulan, int tahun, String email, String password)
-    {
+     * ini merupakan method Customer, yang merupakan Contructor.
+     *
+     * @param nama
+     * @param bulan
+     * @param email
+     * @param password
+     * @param tahun
+     * @param tanggal
+     */
+    public Customer(String nama, int tanggal, int bulan, int tahun, String email, String password) {
         this.id = DatabaseCustomer.getLastCustomerID() + 1;
-        this.nama=nama;
-        this.dob= new GregorianCalendar(tahun, bulan-1, tanggal).getTime();;
-        this.email=email;
-        this.password=password;
-    }
-    
-    public Customer(String nama, Date dob, String email, String password)
-    {
-        this.nama=nama;
-        this.dob=dob;
-        this.email=email;
-        this.password=password;
+        this.nama = nama;
+        this.dob = new GregorianCalendar(tahun, bulan - 1, tanggal).getTime();
+        ;
+        this.email = email;
+        this.password = password;
     }
 
     /**
-    * ini merupakan method getID, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang ID customer.
+     * ini merupakan method Customer, yang merupakan Contructor.
+     *
+     * @param nama
+     * @param email
+     * @param password
+     */
+    public Customer(String nama, Date dob, String email, String password) {
+        this.nama = nama;
+        this.dob = dob;
+        this.email = email;
+        this.password = password;
+    }
 
-    * @return id
-    */
-    public int getID()
-    {
+    /**
+     * ini merupakan method getID, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang ID customer.
+     *
+     * @return id
+     */
+    public int getID() {
         return id;
     }
 
     /**
-    * ini merupakan method getNama, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang nama customer.
-
-    * @return nama
-    */
-    public String getNama()
-    {
+     * ini merupakan method getNama, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang nama customer.
+     *
+     * @return nama
+     */
+    public String getNama() {
         return nama;
     }
-    public String getPassword()
-    {
+
+    /**
+     * ini merupakan method getPassword, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang password customer.
+     *
+     * @return password
+     */
+
+    public String getPassword() {
         return password;
     }
 
-    
-    public String getEmail()
-    {
+    /**
+     * ini merupakan method getEmail, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang password customer.
+     *
+     * @return email
+     */
+    public String getEmail() {
         return email;
     }
-    
-    public Date getDOB()
-    {
+
+    /**
+     * ini merupakan method getDOB, yang merupakan Accessor, method ini digunakan untuk mengambil informasi tentang DOB customer.
+     *
+     * @return dob
+     */
+    public Date getDOB() {
         DateFormat formatter = new SimpleDateFormat("'DOB 'dd MMMM yyyy");
         String output = formatter.format(dob);
         //System.out.print(output);
@@ -82,67 +104,77 @@ public class Customer
     }
 
     /**
-    * ini merupakan method setID, yang merupakan Mutator.
-    * @param id
-    */
-    public void setID(int id)
-    {
-        this.id=id;
+     * ini merupakan method setID, yang merupakan Mutator.
+     *
+     * @param id
+     */
+    public void setID(int id) {
+        this.id = id;
     }
 
     /**
-    * ini merupakan method setNama, yang merupakan Mutator.
-    * @param nama
-    */
-    public void setNama(String nama)
-    {
-        this.nama=nama;
+     * ini merupakan method setNama, yang merupakan Mutator.
+     *
+     * @param nama
+     */
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
-    public void setPassword(String password)
-    {
-        this.password=password;
+    /**
+     * ini merupakan method setPassword, yang merupakan Mutator.
+     *
+     * @param password
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
-    
-    public void setEmail(String email)
-    {
-        String polaregex="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9][A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})";
-        Pattern p = Pattern.compile(polaregex); 
-        Matcher cek = p.matcher(email); 
-        if (cek.matches())
-        {
+
+
+    /**
+     * ini merupakan method setEmail, yang merupakan Mutator.
+     *
+     * @param email
+     */
+    public void setEmail(String email) {
+        String polaregex = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9][A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})";
+        Pattern p = Pattern.compile(polaregex);
+        Matcher cek = p.matcher(email);
+        if (cek.matches()) {
             this.email = email;
-        }
-
-        else
-        {
+        } else {
             this.email = null;
         }
     }
-    
-    public void setDOB(Date dob)
-    {
-        this.dob=dob;
-    }
-    
-    public String toString()
-    {
-        if(DatabasePesanan.getPesananAktif(this)!=null){
-            return "\nCustomer ID   : " + id +
-                   "\nName          : " + nama +
-                   "\nE-Mail        : " + email +
-                   "\nDate of Birth : " + dob +
-                   "\nBooking order is in progress";
-        }
 
-        else{
+
+    /**
+     * ini merupakan method setDOB, yang merupakan Mutator.
+     *
+     * @param dob
+     */
+    public void setDOB(Date dob) {
+        this.dob = dob;
+    }
+
+
+    /**
+     * ini merupakan method toString, yang akan memberikan method tentang informasi dari Customer.
+     */
+    public String toString() {
+        if (DatabasePesanan.getPesananAktif(this) != null) {
             return "\nCustomer ID   : " + id +
-                   "\nName          : " + nama +
-                   "\nE-Mail        : " + email +
-                   "\nDate of Birth : " + dob;
+                    "\nName          : " + nama +
+                    "\nE-Mail        : " + email +
+                    "\nDate of Birth : " + dob +
+                    "\nBooking order is in progress";
+        } else {
+            return "\nCustomer ID   : " + id +
+                    "\nName          : " + nama +
+                    "\nE-Mail        : " + email +
+                    "\nDate of Birth : " + dob;
         }
     }
-    
-    
+
 
 }

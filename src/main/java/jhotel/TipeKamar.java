@@ -4,7 +4,7 @@ package jhotel;
  * Ini merupakan class Enum untuk TipeKamar.Class ini akan membatasi tipe kamar.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 10/03/2018
+ * @version 15/05/2018
  */
 public enum TipeKamar
 {
@@ -12,7 +12,7 @@ public enum TipeKamar
     DOUBLE("Double"),
     PREMIUM("Premium");
     
-    public String toString;
+    private final String toString;
     
     TipeKamar(String toString)
     {
@@ -21,8 +21,7 @@ public enum TipeKamar
     
     public String toString()
     {
-        return toString;
+        return this.toString;
     }
-        
-       
+
 }

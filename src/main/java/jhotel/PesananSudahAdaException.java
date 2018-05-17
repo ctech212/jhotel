@@ -1,5 +1,11 @@
 package jhotel;
 
+/**
+ * Ini merupakan class PesananSudahAdaException. Terdapat beberapa method terkait exception class pesanan.
+ *
+ * @author Mochamad Fahmi Fajrin
+ * @version 15/05/2018
+ */
 public class PesananSudahAdaException extends Exception
 {
     private Pesanan pesanan_error;

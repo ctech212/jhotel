@@ -7,7 +7,7 @@ import java.text.*;
  * Ini merupakan class Pesanan, terdapat beberapa method untuk kepetingan pesanan.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 10/03/2018
+ * @version 15/05/2018
  */
 public class Pesanan {
     private double biaya;
@@ -23,19 +23,35 @@ public class Pesanan {
 
     /**
      * ini merupakan method Pesanan, yang merupakan Contructor.
+     *
+     * @param idHotel
+     * @param jumlahHari
+     * @param noKamar
+     * @param pelanggan
      */
-    public Pesanan(double jumlahHari, Customer pelanggan) {
+    public Pesanan(double jumlahHari, int idHotel, String noKamar, Customer pelanggan) {
         this.jumlahHari = jumlahHari;
         this.pelanggan = pelanggan;
         this.isAktif = true;
-        //this.biaya = jumlahHari * getRoom().getDailyTariff();
+        this.kamar = DatabaseRoom.getRoom(DatabaseHotel.getHotel(idHotel), noKamar);
+        try {
+            this.biaya = jumlahHari * kamar.getDailyTariff();
+        } catch (Exception e) {
+            System.out.println("" + e);
+        }
         this.tanggalPesan = new Date();
         this.id = DatabasePesanan.getLastPesananID() + 1;
     }
 
+    /**
+     * ini merupakan method setBiaya, yang merupakan Mutator untuk mengatur biaya.
+     */
+    public void setBiaya() {
+        biaya = kamar.getDailyTariff() * jumlahHari;
+    }
 
     /**
-     * ini merupakan method getBiaya, yang merupakan Accessor.
+     * ini merupakan method getBiaya, yang merupakan Accessor untuk mendapatkan biaya pesanan.
      *
      * @return biaya.
      */
@@ -43,34 +59,96 @@ public class Pesanan {
         return biaya;
     }
 
+    /**
+     * ini merupakan method setID, yang merupakan Mutator untuk mengatur ID pesanan.
+     *
+     * @param id
+     */
+    public void setID(int id) {
+        this.id = id;
+    }
+
+
+    /**
+     * ini merupakan method getID, yang merupakan Accessor untuk mendapatkan id pesanan.
+     *
+     * @return id.
+     */
     public int getID() {
         return id;
     }
 
 
+    /**
+     * ini merupakan method setTanggalPesan, yang merupakan Mutator untuk mengatur tanggal pesanan.
+     *
+     * @param tanggalPesan
+     * @return tanggalPesan
+     */
+    public Date setTanggalPesan(Date tanggalPesan) {
+        this.tanggalPesan = tanggalPesan;
+        return tanggalPesan;
+
+    }
+
+    /**
+     * ini merupakan method getJumlahHari, yang merupakan Accessor untuk mendapatkan jumlah hari pesanan.
+     *
+     * @return jumlahHari
+     */
     public double getJumlahHari() {
         return jumlahHari;
     }
 
+
     /**
-     * ini merupakan method getPelanggan, yang merupakan Accessor.
+     * ini merupakan method setPelanggan, yang merupakan Mutator untuk mengatur pelanggan yang melakukan pesanan.
      *
-     * @return namaPelanggan.
+     * @param pelanggan
+     */
+    public void setPelanggan(Customer pelanggan) {
+        this.pelanggan = pelanggan;
+    }
+
+    /**
+     * ini merupakan method getPelanggan, yang merupakan Accessor untuk mendapatkan pelanggan yang melakukan pesanan.
+     *
+     * @return pelanggan
      */
 
     public Customer getPelanggan() {
         return pelanggan;
     }
 
+    /**
+     * ini merupakan method setStatusAktif, yang merupakan Mutator untuk mengatur status aktif pesanan.
+     *
+     * @param aktif
+     */
+    public void setStatusAktif(boolean aktif) {
+        isAktif = aktif;
+    }
+
+    /**
+     * ini merupakan method getStatusAktif, yang merupakan Accessor untuk mendapatkan status aktif pesanan.
+     *
+     * @return isAktif
+     */
     public boolean getStatusAktif() {
         return isAktif;
     }
 
+    /**
+     * ini merupakan method setStatusDiproses, yang merupakan Mutator untuk mengatur status diproses pesanan.
+     */
+    public void setStatusDiproses(boolean diproses) {
+        isDiproses = diproses;
+    }
 
     /**
-     * ini merupakan method getStatusDiproses, yang merupakan Accessor.
+     * ini merupakan method getStatusDiproses, yang merupakan Accessor untuk mendapatkan  status diproses pesanan.
      *
-     * @return isDiproses.
+     * @return isDiproses
      */
 
     public boolean getStatusDiproses() {
@@ -78,20 +156,42 @@ public class Pesanan {
     }
 
     /**
-     * ini merupakan method getStatusSelesai, yang merupakan Accessor.
-     *
-     * @return isSelesai.
+     * ini merupakan method setStatusSelesai, yang merupakan Mutator untuk mengatur status selesai pesanan.
      */
+    public void setStatusSelesai(boolean selesai) {
+        isSelesai = selesai;
+    }
 
+    /**
+     * ini merupakan method getStatusSelesai, yang merupakan Accessor untuk mendapatkan  status selesai pesanan.
+     *
+     * @return isSelesai
+     */
     public boolean getStatusSelesai() {
         return isSelesai;
     }
 
+    /**
+     * ini merupakan method setRoom, yang merupakan Mutator untuk mengatur kamar pesanan.
+     */
+    public void setRoom(Room kamar) {
+        this.kamar = kamar;
+    }
 
+    /**
+     * ini merupakan method getRoom, yang merupakan Accessor untuk mendapatkan  kamar dari pesanan yang dibuat.
+     *
+     * @return kamar
+     */
     public Room getRoom() {
         return kamar;
     }
 
+    /**
+     * ini merupakan method gettanggalPesan, yang merupakan Accessor untuk mendapatkan  tanggal pesan dari pesanan yang dibuat.
+     *
+     * @return tanggalPesan
+     */
     public Date getTanggalPesan() {
         DateFormat formatter = new SimpleDateFormat("'DOB 'dd MMMM yyyy");
         String output = formatter.format(tanggalPesan);
@@ -100,59 +200,8 @@ public class Pesanan {
         return tanggalPesan;
     }
 
-
     /**
-     * ini merupakan method setPelanggan, yang merupakan Mutator.
-     *
-     * @param pelanggan
-     */
-    public void setPelanggan(Customer pelanggan) {
-        this.pelanggan = pelanggan;
-    }
-
-    public void setID(int id) {
-        this.id = id;
-    }
-
-
-    /**
-     * ini merupakan method setStatusDiproses, yang merupakan Mutator.
-     */
-    public void setStatusDiproses(boolean diproses) {
-        isDiproses = diproses;
-    }
-
-    /**
-     * ini merupakan method setStatusSelesai, yang merupakan Mutator.
-     */
-    public void setStatusSelesai(boolean selesai) {
-        isSelesai = selesai;
-    }
-
-    public void setRoom(Room kamar) {
-        this.kamar = kamar;
-    }
-
-    /**
-     * ini merupakan method setBiaya, yang merupakan Mutator.
-     */
-    public void setBiaya() {
-        biaya = kamar.getDailyTariff() * jumlahHari;
-    }
-
-    public Date setTanggalPesan(Date tanggalPesan) {
-        this.tanggalPesan = tanggalPesan;
-        return tanggalPesan;
-
-    }
-
-    public void setStatusAktif(boolean aktif) {
-        aktif = isAktif;
-    }
-
-
-    /**
-     * ini merupakan method printData, untuk menghasilkan outpu dari biaya.
+     * ini merupakan method toString, untuk menghasilkan output dari pesanan.
      */
     public String toString() {
         String final_status = "KOSONG";
@@ -166,25 +215,20 @@ public class Pesanan {
         }
 
 
-
         if (kamar != null) {
-            return "Pesanan{" +
-                    "pelanggan=" + pelanggan.getNama() +
-                    ", hotel=" + kamar.getHotel().getNama() +
-                    ", kamar=" + kamar.getNomorKamar() +
-                    ", tipeKamar=" + kamar.getTipeKamar() +
-                    ", status='" + final_status + '\'' +
-                    '}';
+            return "Dibuat oleh " + getPelanggan().getNama()
+                    + ". Proses booking untuk " + getRoom().getHotel().getNama()
+                    + "kamar nomor " + getRoom().getNomorKamar()
+                    + "dengan tipe kamar yang diinginkan " + getRoom().getTipeKamar().toString()
+                    + ". Status: " + final_status + ".";
+        } else {
+            return "Dibuat oleh " + getPelanggan().getNama()
+                    + ". Proses booking null"
+                    + "kamar nomor null"
+                    + "dengan tipe kamar yang diinginkan null"
+                    + ". Status: " + final_status + ".";
         }
-        return "Pesanan{" +
-                "pelanggan=" + pelanggan.getNama() +
-                ", hotel=null" +
-                ", kamar=null" +
-                ", tipeKamar=null" +
-                ", status='" + final_status + '\'' +
-                '}';
     }
-
 
 
 }

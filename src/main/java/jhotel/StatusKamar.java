@@ -3,7 +3,7 @@ package jhotel;
  * Ini merupakan class Enum untuk StatusKamar.Class ini akan membatasi status kamar.
  *
  * @author Mochamad Fahmi Fajrin
- * @version 10/03/2018
+ * @version 15/05/2018
  */
 public enum StatusKamar
 {
@@ -11,14 +11,14 @@ public enum StatusKamar
     PROCESSED("Processed"),
     VACANT("Vacant");
     
-    public String toString;
+    private final String toString;
     
-    StatusKamar(String toString)
+    private StatusKamar(String toString)
     {
         this.toString=toString;
     }
     public String toString()
     {
-        return toString;
+        return this.toString;
     }
 }
