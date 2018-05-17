@@ -2,123 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7d63249-64f4-4561-bf4e-3a722f48d51e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/jhotel_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/jhotel_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/jhotel_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/jhotel_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Administrasi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Administrasi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseHotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseHotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabasePesanan.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabasePesanan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/DatabaseRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/DoubleRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/DoubleRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/HotelSudahAdaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/HotelSudahAdaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/HotelTidakDitemukanException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/HotelTidakDitemukanException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/JHotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/JHotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Lokasi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Lokasi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/PelangganSudahAdaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/PelangganSudahAdaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/PelangganTidakDitemukanException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/PelangganTidakDitemukanException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Pesanan.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Pesanan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/PesananSudahAdaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/PesananSudahAdaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/PesananTidakDitemukanException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/PesananTidakDitemukanException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/PremiumRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/PremiumRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/RoomSudahAdaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/RoomSudahAdaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/RoomTidakDitemukanException.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/RoomTidakDitemukanException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/SingleRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/SingleRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/StatusKamar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/StatusKamar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/TipeKamar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/TipeKamar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/HotelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/HotelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/PesananController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/PesananController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/jhotel/controller/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Administrasi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/CustomerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/DatabaseCustomer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/DatabaseHotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/DatabasePesanan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/DatabaseRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/DoubleRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Hotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/HotelSudahAdaException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/HotelTidakDitemukanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/JHotel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Lokasi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/PelangganSudahAdaException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/PelangganTidakDitemukanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Pesanan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/PesananSudahAdaException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/PesananTidakDitemukanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/PremiumRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/RoomSudahAdaException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/RoomTidakDitemukanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/SingleRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/StatusKamar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/jhotel/TipeKamar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/Tugas 12/LetsGo.ctxt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/Tugas 12/RunForYourLife.ctxt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/Tugas 12/package.bluej" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/Customer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/DatabaseCustomer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/DatabasePesanan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/Hotel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/JHotel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/Lokasi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/Pesanan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/logfile.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jhotel/doc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Administrasi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Administrasi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/DatabasePesanan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/DatabasePesanan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/DatabaseRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/DoubleRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/DoubleRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/HotelSudahAdaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/HotelSudahAdaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/HotelTidakDitemukanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/HotelTidakDitemukanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/JHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/JHotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Lokasi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Lokasi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/PelangganSudahAdaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/PelangganSudahAdaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/PelangganTidakDitemukanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/PelangganTidakDitemukanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Pesanan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Pesanan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/PesananSudahAdaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/PesananSudahAdaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/PesananTidakDitemukanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/PesananTidakDitemukanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/PremiumRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/PremiumRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/RoomSudahAdaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/RoomSudahAdaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/RoomTidakDitemukanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/RoomTidakDitemukanException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/SingleRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/SingleRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/StatusKamar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/StatusKamar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/TipeKamar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/TipeKamar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/controller/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/controller/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/controller/PesananController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/controller/PesananController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/controller/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Administrasi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DBCustomer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DatabaseCustomer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DatabaseHotel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DatabasePesanan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DatabaseRoom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DoubleRoom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/HotelSudahAdaException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/PelangganSudahAdaException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/PelangganTidakDitemukanException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Pesanan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/PesananSudahAdaException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/PesananTidakDitemukanException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/PremiumRoom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/RoomSudahAdaException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/RoomTidakDitemukanException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/SingleRoom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/StatusKamar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/TipeKamar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/CustomerController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/HotelController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/PesananController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/RoomController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/controller/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/package-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/overview-frame.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/Customer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/DatabaseCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/DatabaseConnection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/DatabasePesanan.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/HotelTidakDitemukanException.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/Hotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Hotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/JHotel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/JHotel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/Lokasi.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/jhotel/Lokasi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/Pesanan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/logfile.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jhotel/doc/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jhotel/doc/stylesheet.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -216,8 +209,8 @@
       <file leaf-file-name="DBCustomer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/DBCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+            <state relative-caret-position="114">
+              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -237,7 +230,7 @@
       <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/DatabaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="85">
               <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -249,7 +242,7 @@
       <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
+            <state relative-caret-position="2091">
               <caret line="141" column="6" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
             </state>
           </provider>
@@ -831,27 +824,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
-              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
-              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
-              <item name="jhotel" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
-              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -898,7 +871,27 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
+              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
+              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
+              <item name="jhotel" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="jhotel" type="58d84e3e:PackageViewProjectNode" />
+              <item name="jhotel_main" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1069,11 +1062,12 @@
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.21083455" side_tool="true" weight="0.15421304" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32838285" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.78916544" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.78916544" visible="true" weight="0.32933104" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32838285" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2322239" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23600605" />
+      <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="right" id="Gradle" order="4" visible="true" weight="0.1096823" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -1088,7 +1082,6 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.0" />
-      <window_info anchor="bottom" id="Find" order="4" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
@@ -1097,14 +1090,15 @@
       <window_info anchor="right" id="Gradle" order="5" visible="true" weight="0.14787701" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.78916544" visible="true" weight="0.0190779" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.0" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
@@ -1112,9 +1106,8 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.21083455" side_tool="true" weight="0.15421304" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.21621622" />
-      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4978038" weight="0.15580286" />
       <window_info anchor="right" id="Maven Projects" order="3" />
@@ -1366,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
+        <state relative-caret-position="2091">
           <caret line="141" column="6" selection-start-line="141" selection-start-column="6" selection-end-line="141" selection-end-column="6" />
         </state>
       </provider>
@@ -1380,7 +1373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="85">
           <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1390,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jhotel/DBCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        <state relative-caret-position="114">
+          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
